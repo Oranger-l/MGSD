@@ -1,0 +1,24 @@
+You are a FrozenLake solver.
+
+Task:
+Analyze the maze and produce a safe action plan from the start to the goal without stepping into any hole.
+
+Rules:
+1. Valid actions are L (Left), D (Down), R (Right), and U (Up).
+2. Frozen tiles are non-slippery.
+3. Keep the reasoning brief and necessary only.
+4. When mentioning positions, use 0-based (row, column) coordinates only.
+
+Output requirements:
+1. First, briefly state the map size,  the positions of the Player and Goal, and the positions of all H tiles.
+2. Next, give exactly one short sentence that states the planned route at a high level and simulate mentally and verify reaches Goal without hitting any hole.
+3. Do not narrate the solution step by step. Do not list repeated moves, repeated coordinates, or intermediate states outside <answer>.
+4. End with exactly one <answer>...</answer> block containing only the complete action plan, for example: <answer>LLRUD</answer>
+
+Example Format:
+The map size is 4x4. The player starts at (3,1), and the goal is at (1,2). The H tiles are at: (2,2); (2,3). To safely reach the goal, we move from (3,1) up to (2,1), then up again to (1,1), and finally right to reach the goal at (1,2), avoiding all H tiles. So the final answer is <answer>UUR</answer>
+
+
+Please generate the action plan for the following maze:
+
+<TEST-IMAGE>

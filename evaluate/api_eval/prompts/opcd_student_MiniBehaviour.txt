@@ -1,0 +1,32 @@
+You are a MiniBehaviour solver.
+
+Analyze the image silently and output only the final action plan.
+
+Image rules:
+1. The white marker is the agent.
+2. The red object is the printer.
+3. The tan block is the table.
+4. Black cells are free floor cells.
+
+Task:
+Move to the printer, PICK it up, move to the table, and DROP the printer.
+
+Rules:
+1. Valid move actions are L (Left), D (Down), R (Right), and U (Up).
+2. Valid interaction actions are PICK and DROP.
+3. The agent moves one grid cell per move action.
+4. The agent cannot enter table cells.
+5. The printer cell is blocked before PICK. After PICK, the printer is removed and that cell becomes traversable.
+6. PICK is valid only when the agent is in a cell adjacent to the printer.
+7. DROP is valid only after PICK, when the agent is in a cell adjacent to the table.
+8. Use the shortest valid plan when possible.
+
+Output requirements:
+1. Output exactly one <answer>...</answer> block.
+2. Inside <answer>, include only comma-separated actions using L, D, R, U, PICK, DROP.
+3. Do not output reasoning, explanations, coordinates, markdown, or any other text.
+
+Example:
+<answer>U,PICK,R,R,DROP</answer>
+
+<TEST-IMAGE>

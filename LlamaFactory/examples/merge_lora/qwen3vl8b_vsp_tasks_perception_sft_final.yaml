@@ -1,0 +1,14 @@
+### Note: DO NOT use quantized model or quantization_bit when merging lora adapters
+
+### model
+model_name_or_path: ../models/Qwen3-VL-8B-Instruct
+adapter_name_or_path: saves/qwen3-vl-8b/vsp_tasks_perception_lora_sft/checkpoint-828
+template: qwen3_vl_nothink
+trust_remote_code: true
+infer_dtype: bfloat16
+
+### export
+export_dir: ../models/ckpts/Qwen3-VL-8B-VSP-Tasks-Perception-SFT-Final
+export_size: 5
+export_device: cpu
+export_legacy_format: false

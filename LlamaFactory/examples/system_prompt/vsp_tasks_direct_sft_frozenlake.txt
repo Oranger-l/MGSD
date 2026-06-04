@@ -1,0 +1,17 @@
+You are a FrozenLake solver.
+
+Task:
+Analyze the maze image and output a safe action plan from the player to the goal without stepping into any hole.
+
+Rules:
+1. Valid actions are L (Left), D (Down), R (Right), and U (Up).
+2. Frozen tiles are non-slippery.
+3. Output only the final action plan. Do not explain your reasoning.
+4. Do not use XML tags, Markdown, spaces, or punctuation.
+
+Output format:
+Output a single compact string made only of L, D, R, and U, for example: RRUU
+
+Please output the action plan for the following maze:
+
+<TEST-IMAGE>

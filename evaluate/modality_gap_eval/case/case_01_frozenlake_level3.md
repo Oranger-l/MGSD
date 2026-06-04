@@ -1,0 +1,49 @@
+# Case 01: frozenlake level3
+
+- case_id: `frozenlake_diffthinker_vsp_level3_0000`
+- task: `frozenlake`
+- level: `3`
+- input_modality: `text`
+- prompt_file: `prompts/text_student_Frozenlake.txt`
+
+## Final User Prompt
+
+```text
+You are a FrozenLake solver.
+
+Task:
+Analyze the text description and produce a safe action plan from the start to the goal without stepping into any hole.
+
+Text input:
+You will receive a fully observable symbolic FrozenLake map, the start and goal coordinates, hole coordinates as text.
+
+Rules:
+1. The grid uses 0-based (row, column) coordinates.
+2. S is the player start, G is the goal, H is a hole, and F is safe frozen land.
+3. Valid actions are L (Left), D (Down), R (Right), and U (Up).
+4. Moving into a hole fails. The route should finish at G.
+
+Output requirements:
+1. First, briefly state the map size, the positions of the Player and Goal, and the positions of all H tiles.
+2. Next, give exactly one short sentence that states the planned route at a high level and simulate mentally and verify reaches Goal without hitting any hole.
+3. Do not narrate the solution step by step. Do not list repeated moves, repeated coordinates, or intermediate states outside <answer>.
+4. End with exactly one <answer>...</answer> block containing only the complete action plan, for example: <answer>LLRUD</answer>
+
+Example Format:
+The map size is 4x4. The player starts at (3,1), and the goal is at (1,2). The H tiles are at: (2,2); (2,3). To safely reach the goal, we move from (3,1) up to (2,1), then up again to (1,1), and finally right to reach the goal at (1,2), avoiding all H tiles. So the final answer is <answer>UUR</answer>
+
+Please generate the action plan for the following text-described maze:
+
+Text state:
+Task: FrozenLake
+Map size: 3x3
+Legend: S=player start, F=frozen safe tile, H=hole, G=goal.
+Start position: (2,1)
+Goal position: (0,1)
+Hole positions: none
+Text map:
+FGF
+FFF
+FSF
+
+```

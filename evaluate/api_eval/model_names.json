@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-05-24",
+  "configured_api_key_file": "api_config_files/api_config_openai.json",
+  "requested_model_ids": {
+    "GPT-4o": "gpt-4o",
+    "GPT-5": "gpt-5",
+    "Gemini 2.5 Flash": "gemini-2.5-flash",
+    "Gemini 2.5 Pro": "gemini-2.5-pro",
+    "Gemini 3 Flash": "gemini-3-flash-preview"
+  },
+  "available_from_configured_api_models_endpoint": {
+    "gpt-4o": true,
+    "gpt-5": true,
+    "gemini-2.5-flash": true,
+    "gemini-2.5-pro": true,
+    "gemini-3-flash-preview": true
+  },
+  "note": "Model names are examples for OpenAI-compatible gateways. Configure api_config_files/api_config_openai.json or pass OPENAI_API_KEY/OPENAI_BASE_URL before running."
+}

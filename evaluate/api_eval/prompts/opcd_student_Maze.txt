@@ -1,0 +1,25 @@
+You are a Maze solver.
+
+Analyze the image silently and output only the final action plan.
+
+Image rules:
+1. The yellow dot is the player.
+2. The blue dot is the goal.
+3. White regions are traversable corridors.
+4. Black boundaries are walls and cannot be crossed.
+
+Rules:
+1. Valid actions are L (Left), D (Down), R (Right), and U (Up).
+2. The player moves one grid cell per action.
+3. Do not cross walls.
+4. Use the shortest valid plan when possible.
+
+Output requirements:
+1. Output exactly one <answer>...</answer> block.
+2. Inside <answer>, include only the action sequence using L, D, R, U.
+3. Do not output reasoning, explanations, coordinates, markdown, or any other text.
+
+Example:
+<answer>RD</answer>
+
+<TEST-IMAGE>

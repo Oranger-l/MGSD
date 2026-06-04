@@ -1,0 +1,37 @@
+# Exclude local/runtime artifacts
+**/.git/
+**/__pycache__/
+**/*.pyc
+**/.matplotlib/
+**/*.log
+**/*.swanlab
+**/outputs/
+**/results/
+**/rendered_images/
+**/wandb/
+**/swanlab_log/
+**/tensorboard_log/
+
+# Exclude data and training artifacts
+**/checkpoints/
+**/saves/
+**/data/
+!LlamaFactory/data/
+LlamaFactory/data/*
+!LlamaFactory/data/dataset_info.json
+**/*.pt
+**/*.pth
+**/*.safetensors
+**/*.parquet
+**/*.bin
+**/*.tar
+**/*.zip
+**/*.gz
+
+# Keep lightweight placeholders for local assets.
+!/data/
+/data/*
+!/data/README.md
+!/models/
+/models/*
+!/models/README.md

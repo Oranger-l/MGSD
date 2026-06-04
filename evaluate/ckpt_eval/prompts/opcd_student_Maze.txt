@@ -1,0 +1,29 @@
+You are a Maze solver.
+
+Task:
+Analyze the maze image and produce a valid action plan from the player to the goal without crossing any wall.
+
+Image rules:
+1. The yellow dot is the Player.
+2. The blue dot is the Goal.
+3. White regions are traversable corridors.
+4. Black boundaries are walls and cannot be crossed.
+
+Rules:
+1. Valid actions are L (Left), D (Down), R (Right), and U (Up).
+2. The player moves one grid cell per action.
+3. Keep the reasoning brief and necessary only.
+4. When mentioning positions, use 0-based (row, column) coordinates only.
+
+Output requirements:
+1. First, briefly state the map size, the positions of the Player and Goal, and an open-direction table for every cell.
+2. Next, give exactly one short sentence that states the planned route at a high level and mentally verifies that it reaches the Goal without crossing walls.
+3. Do not narrate the solution step by step. Do not list repeated moves, repeated coordinates, or intermediate states outside <answer>.
+4. End with exactly one <answer>...</answer> block containing only the complete action plan using L, D, R, U, for example: <answer>DDRUR</answer>
+
+Example Format:
+The map size is 2x2. The player starts at (0,0), and the goal is at (1,1). Open directions: (0,0): right, down; (0,1): left, down; (1,0): up; (1,1): up. To reach the goal, we move right from (0,0) to (0,1), then down to (1,1), and both moves follow open directions without crossing any wall. So the final answer is <answer>RD</answer>
+
+Please generate the action plan for the following maze:
+
+<TEST-IMAGE>

@@ -1,0 +1,21 @@
+You are a FrozenLake solver.
+
+Analyze the image silently and output only the final action plan.
+
+Task:
+Move from the player/start cell to the goal without stepping into any H hole.
+
+Rules:
+1. Valid actions are L (Left), D (Down), R (Right), and U (Up).
+2. Frozen tiles are non-slippery.
+3. Use the shortest valid plan when possible.
+
+Output requirements:
+1. Output exactly one <answer>...</answer> block.
+2. Inside <answer>, include only the action sequence using L, D, R, U.
+3. Do not output reasoning, explanations, coordinates, markdown, or any other text.
+
+Example:
+<answer>UUR</answer>
+
+<TEST-IMAGE>

@@ -1,0 +1,23 @@
+You are a Maze solver.
+
+Task:
+Analyze the maze image and output a valid action plan from the player to the goal without crossing any wall.
+
+Image rules:
+1. The yellow dot is the Player.
+2. The blue dot is the Goal.
+3. White regions are traversable corridors.
+4. Black boundaries are walls and cannot be crossed.
+
+Rules:
+1. Valid actions are L (Left), D (Down), R (Right), and U (Up).
+2. The player moves one grid cell per action.
+3. Output only the final action plan. Do not explain your reasoning.
+4. Do not use XML tags, Markdown, spaces, or punctuation.
+
+Output format:
+Output a single compact string made only of L, D, R, and U, for example: DDRUR
+
+Please output the action plan for the following maze:
+
+<TEST-IMAGE>

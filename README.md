@@ -2,11 +2,14 @@
 
 # MGSD
 
-**Mitigating the perception gap for visual spatial planning with SFT and OPCD.**
+**Learning Visual Spatial Planning from Symbolic State via
+Modality-Gap-Aware Self-Distillation**
 
 ![Task](https://img.shields.io/badge/Tasks-FrozenLake%20%7C%20Maze%20%7C%20MiniBehaviour-blue)
 ![Model](https://img.shields.io/badge/Backbone-Qwen3--VL-green)
 ![Training](https://img.shields.io/badge/Training-SFT%20%2B%20OPCD-orange)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
+[![arXiv](https://img.shields.io/badge/arXiv-2606.06076-b31b1b)](https://arxiv.org/pdf/2606.06076)
 
 </div>
 
@@ -175,6 +178,21 @@ TODO:
 - [x] Release the source code.
 - [ ] Release VSP-Tasks training and validation data.
 - [ ] Release trained SFT and OPCD checkpoints.
+
+## 📚 Citation
+
+If you find MGSD useful for your research, please consider citing our paper:
+
+```bibtex
+@misc{luo2026mgsd,
+  title = {Learning Visual Spatial Planning from Symbolic State via Modality-Gap-Aware Self-Distillation},
+  author = {Luo, Haocheng},
+  year = {2026},
+  eprint = {2606.06076},
+  archivePrefix = {arXiv},
+  url = {https://arxiv.org/abs/2606.06076}
+}
+```
 
 ## 📬 Contact
 

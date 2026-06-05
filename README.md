@@ -35,10 +35,6 @@ Datasets and trained checkpoints will be released separately.
   downstream planning.
 - **Text-teacher / visual-student OPCD**: the teacher receives symbolic context,
   while the student learns from task images.
-- **Task-aware prompts and rewards**: FrozenLake, Maze, and MiniBehaviour each
-  use tailored prompts, parsers, and success checks.
-- **Unified evaluation**: local checkpoint, perception, API, and modality-gap
-  evaluation are collected under one entry point.
 
 ## 🗂️ Repository Map
 
@@ -171,27 +167,10 @@ See [`evaluate/README.md`](evaluate/README.md) for more details.
 
 TODO:
 
-- [x] Release the arXiv paper.
-- [x] Release the source code.
 - [ ] Release VSP-Tasks training and validation data.
 - [ ] Release trained SFT and OPCD checkpoints.
-
-## 📚 Citation
-
-If you find MGSD useful for your research, please consider citing our paper:
-
-```bibtex
-@misc{luo2026mgsd,
-  title = {Learning Visual Spatial Planning from Symbolic State via Modality-Gap-Aware Self-Distillation},
-  author = {Luo, Haocheng and Liu, Jiahui and Zhang, Ruicheng and Zhong, Zhizhou
-            and Huang, Jiaqi and Xu, Zunnan and Shi, Quan and Zhou, Jun and Li, Xiu},
-  year = {2026},
-  eprint = {2606.06076},
-  archivePrefix = {arXiv}
-}
-```
-
-Paper: https://arxiv.org/pdf/2606.06076
+- [x] Release the arXiv paper.
+- [x] Release the source code.
 
 ## 📬 Contact
 
@@ -209,3 +188,20 @@ MGSD builds on several excellent open-source projects:
   tooling and ecosystem support.
 
 We sincerely thank the authors and contributors of these frameworks.
+
+## 📚 Citation
+
+If you find MGSD useful for your research, please consider citing our paper:
+
+```bibtex
+@misc{luo2026mgsd,
+  title = {Learning Visual Spatial Planning from Symbolic State via Modality-Gap-Aware Self-Distillation},
+  author = {Luo, Haocheng and Liu, Jiahui and Zhang, Ruicheng and Zhong, Zhizhou
+            and Huang, Jiaqi and Xu, Zunnan and Shi, Quan and Zhou, Jun and Li, Xiu},
+  year = {2026},
+  eprint = {2606.06076},
+  archivePrefix = {arXiv}
+}
+```
+
+Paper: https://arxiv.org/pdf/2606.06076

@@ -186,13 +186,15 @@ If you find MGSD useful for your research, please consider citing our paper:
 ```bibtex
 @misc{luo2026mgsd,
   title = {Learning Visual Spatial Planning from Symbolic State via Modality-Gap-Aware Self-Distillation},
-  author = {Luo, Haocheng},
+  author = {Luo, Haocheng and Liu, Jiahui and Zhang, Ruicheng and Zhong, Zhizhou
+            and Huang, Jiaqi and Xu, Zunnan and Shi, Quan and Zhou, Jun and Li, Xiu},
   year = {2026},
   eprint = {2606.06076},
-  archivePrefix = {arXiv},
-  url = {https://arxiv.org/abs/2606.06076}
+  archivePrefix = {arXiv}
 }
 ```
+
+Paper: https://arxiv.org/pdf/2606.06076
 
 ## 📬 Contact
 

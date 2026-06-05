@@ -1,9 +1,6 @@
 <div align="center">
 
-# MGSD
-
-**Learning Visual Spatial Planning from Symbolic State via
-Modality-Gap-Aware Self-Distillation**
+# Learning Visual Spatial Planning from Symbolic State via Modality-Gap-Aware Self-Distillation
 
 ![Task](https://img.shields.io/badge/Tasks-FrozenLake%20%7C%20Maze%20%7C%20MiniBehaviour-blue)
 ![Model](https://img.shields.io/badge/Backbone-Qwen3--VL-green)
